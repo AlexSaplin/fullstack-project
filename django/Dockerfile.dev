@@ -1,0 +1,11 @@
+# start from an official image
+FROM python:3.8
+
+WORKDIR /opt/services/django
+
+ADD ./requirements.txt .
+
+RUN pip install -r requirements.txt
+
+ENTRYPOINT python manage.py migrate && python manage.py runserver 0:16000
+EXPOSE 16000

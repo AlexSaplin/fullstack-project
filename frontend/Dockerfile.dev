@@ -1,0 +1,10 @@
+FROM node:14
+
+# set working directory
+WORKDIR /opt/services/frontend
+
+# add `/opt/services/frontend/node_modules/.bin` to $PATH
+ENV PATH /opt/services/frontend/node_modules/.bin:$PATH
+
+# build app
+ENTRYPOINT echo "BEGIN BUILDING FRONTEND (will be available at localhost:3000)" && npm install && npm run start

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeepMux</title>
+    <link rel="SHORTCUT ICON" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        FB.init({
+          appId            : '%REACT_APP_FACEBOOK_PUBLIC_APP_ID%',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v7.0'
+        });
+      });
+    </script>
+    <script crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+    
+  </head>
+  <body style="margin: 0; padding: 0;">
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+</body>
+</html>

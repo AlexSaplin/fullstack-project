@@ -1,0 +1,50 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Aleksei Saplin (alexsaplin@deepmux.com)",
+  "proxy": "http://deepmux:16000",
+  "dependencies": {
+    "@ant-design/icons": "latest",
+    "antd": "latest",
+    "axios": "latest",
+    "babel-plugin-import": "latest",
+    "customize-cra": "latest",
+    "history": "latest",
+    "http-proxy-middleware": "latest",
+    "moment": "latest",
+    "react-app-rewired": "latest",
+    "react-device-detect": "latest",
+    "react-dom": "latest",
+    "react-google-login": "latest",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "react-scripts": "latest",
+    "react": "latest",
+    "redux-logger": "latest",
+    "redux-thunk": "latest",
+    "redux": "latest",
+    "webpack-bundle-analyzer": "latest"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "rimraf ./build && react-app-rewired build && rimraf ./build/**/*.map",
+    "test": "react-app-rewired test --passWithNoTests",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

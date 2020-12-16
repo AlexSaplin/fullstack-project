@@ -1,0 +1,25 @@
+asgiref == 3.2.3
+Django == 3.0
+django-cors-headers == 3.2.1
+djangorestframework == 3.10.3
+djangorestframework-recaptcha == 0.2.0
+drf-yasg
+faust==1.10.4
+flake8
+flake8-django
+google-auth
+grpcio==1.29.0
+gunicorn == 20.0.4
+Pillow == 5.0.0
+protobuf==3.12.2
+psycopg2
+pylint
+pylint-django
+python-dateutil
+pytz == 2019.3
+pyyaml == 5.2
+sqlparse == 0.3.0
+uritemplate == 3.0.0
+yandex_checkout
+celery==4.4
+django-celery-beat==2.0.0
